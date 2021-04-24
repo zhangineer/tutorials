@@ -1,5 +1,5 @@
 
-from scapy.all import *
+from scapy.all import bind_layers
 import sys, os
 
 TYPE_MYTUNNEL = 0x1212

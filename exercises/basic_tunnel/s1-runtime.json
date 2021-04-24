@@ -36,7 +36,6 @@
         "port": 3
       }
     },
-
     {
       "table": "MyIngress.myTunnel_exact",
       "match": {
