@@ -7,11 +7,11 @@
 action 	    apply 	    bit 	        bool
 const 	    control 	default 	    else
 enum 	    error 	    extern 	        exit
-false 	    header 	    header_union 	if
-in 	        inout 	    int 	        match_kind
-package 	parser 	    out 	        return
-select 	    state 	    string 	        struct
-switch 	    table 	    transition 	    true
+false       header 	    header_union 	if
+in          inout 	    int 	        match_kind
+package     parser 	    out 	        return
+select      state 	    string 	        struct
+switch      table 	    transition 	    true
 tuple 	    typedef 	varbit 	        verify
 void 	
 
@@ -295,7 +295,7 @@ control MyIngress( inout parsedHeaders hdr,
             drop;
         }
         size = 1024;                // 'size': an integer specifying the desired size of the table. 
-        default_action = drop;  // 'default_action': an action to execute when the lookup in the lookup table fails to find a match for the key used. 
+        default_action = drop();  // 'default_action': an action to execute when the lookup in the lookup table fails to find a match for the key used. 
     }
 
     /**
